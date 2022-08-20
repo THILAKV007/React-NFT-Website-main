@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-NFT-Website-main/static/css/main.c550532d.chunk.css",
-    "main.js": "/React-NFT-Website-main/static/js/main.14258436.chunk.js",
-    "main.js.map": "/React-NFT-Website-main/static/js/main.14258436.chunk.js.map",
+    "main.js": "/React-NFT-Website-main/static/js/main.dfe08683.chunk.js",
+    "main.js.map": "/React-NFT-Website-main/static/js/main.dfe08683.chunk.js.map",
     "runtime-main.js": "/React-NFT-Website-main/static/js/runtime-main.f007d48d.js",
     "runtime-main.js.map": "/React-NFT-Website-main/static/js/runtime-main.f007d48d.js.map",
     "static/css/2.15bdb891.chunk.css": "/React-NFT-Website-main/static/css/2.15bdb891.chunk.css",
@@ -20,14 +20,14 @@
     "static/media/ava-06.2cdc54a3.png": "/React-NFT-Website-main/static/media/ava-06.2cdc54a3.png",
     "static/media/common-section.css": "/React-NFT-Website-main/static/media/bg.d631560b.jpg",
     "static/media/hero.bff38e30.jpg": "/React-NFT-Website-main/static/media/hero.bff38e30.jpg",
-    "static/media/img-01.08f9fcfa.jpg": "/React-NFT-Website-main/static/media/img-01.08f9fcfa.jpg",
-    "static/media/img-02.bc52940c.jpg": "/React-NFT-Website-main/static/media/img-02.bc52940c.jpg",
-    "static/media/img-03.1af6fd6b.jpg": "/React-NFT-Website-main/static/media/img-03.1af6fd6b.jpg",
-    "static/media/img-04.308d507c.jpg": "/React-NFT-Website-main/static/media/img-04.308d507c.jpg",
-    "static/media/img-05.ac88d200.jpg": "/React-NFT-Website-main/static/media/img-05.ac88d200.jpg",
-    "static/media/img-06.896c4938.jpg": "/React-NFT-Website-main/static/media/img-06.896c4938.jpg",
-    "static/media/img-07.8969cb71.jpg": "/React-NFT-Website-main/static/media/img-07.8969cb71.jpg",
-    "static/media/img-08.337eb98f.jpg": "/React-NFT-Website-main/static/media/img-08.337eb98f.jpg",
+    "static/media/img-01.69dfbab6.jpg": "/React-NFT-Website-main/static/media/img-01.69dfbab6.jpg",
+    "static/media/img-02.b01cd2a9.jpg": "/React-NFT-Website-main/static/media/img-02.b01cd2a9.jpg",
+    "static/media/img-03.ae727ea7.jpg": "/React-NFT-Website-main/static/media/img-03.ae727ea7.jpg",
+    "static/media/img-04.c362bd77.jpg": "/React-NFT-Website-main/static/media/img-04.c362bd77.jpg",
+    "static/media/img-05.311ef6cf.jpg": "/React-NFT-Website-main/static/media/img-05.311ef6cf.jpg",
+    "static/media/img-06.6f9c855d.jpg": "/React-NFT-Website-main/static/media/img-06.6f9c855d.jpg",
+    "static/media/img-07.0f39adb7.jpg": "/React-NFT-Website-main/static/media/img-07.0f39adb7.jpg",
+    "static/media/img-08.ea7a3d28.jpg": "/React-NFT-Website-main/static/media/img-08.ea7a3d28.jpg",
     "static/media/img-09.1ce5d3d3.jpg": "/React-NFT-Website-main/static/media/img-09.1ce5d3d3.jpg",
     "static/media/remixicon.css": "/React-NFT-Website-main/static/media/remixicon.f2616f59.ttf"
   },
@@ -36,6 +36,6 @@
     "static/css/2.15bdb891.chunk.css",
     "static/js/2.84692822.chunk.js",
     "static/css/main.c550532d.chunk.css",
-    "static/js/main.14258436.chunk.js"
+    "static/js/main.dfe08683.chunk.js"
   ]
 }
