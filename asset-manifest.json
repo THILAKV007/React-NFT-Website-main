@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React-NFT-Website-main/static/css/main.aefc273a.chunk.css",
-    "main.js": "/React-NFT-Website-main/static/js/main.8705d3e0.chunk.js",
-    "main.js.map": "/React-NFT-Website-main/static/js/main.8705d3e0.chunk.js.map",
-    "runtime-main.js": "/React-NFT-Website-main/static/js/runtime-main.f007d48d.js",
-    "runtime-main.js.map": "/React-NFT-Website-main/static/js/runtime-main.f007d48d.js.map",
-    "static/css/2.15bdb891.chunk.css": "/React-NFT-Website-main/static/css/2.15bdb891.chunk.css",
-    "static/js/2.f2ead09c.chunk.js": "/React-NFT-Website-main/static/js/2.f2ead09c.chunk.js",
-    "static/js/2.f2ead09c.chunk.js.map": "/React-NFT-Website-main/static/js/2.f2ead09c.chunk.js.map",
+    "main.css": "/React-NFT-Website-main/static/css/main.3d9c0588.chunk.css",
+    "main.js": "/React-NFT-Website-main/static/js/main.0f592930.chunk.js",
+    "main.js.map": "/React-NFT-Website-main/static/js/main.0f592930.chunk.js.map",
+    "runtime-main.js": "/React-NFT-Website-main/static/js/runtime-main.6ed0b93b.js",
+    "runtime-main.js.map": "/React-NFT-Website-main/static/js/runtime-main.6ed0b93b.js.map",
+    "static/css/2.373dc3f7.chunk.css": "/React-NFT-Website-main/static/css/2.373dc3f7.chunk.css",
+    "static/js/2.0bfa747d.chunk.js": "/React-NFT-Website-main/static/js/2.0bfa747d.chunk.js",
+    "static/js/2.0bfa747d.chunk.js.map": "/React-NFT-Website-main/static/js/2.0bfa747d.chunk.js.map",
     "index.html": "/React-NFT-Website-main/index.html",
-    "static/css/2.15bdb891.chunk.css.map": "/React-NFT-Website-main/static/css/2.15bdb891.chunk.css.map",
-    "static/css/main.aefc273a.chunk.css.map": "/React-NFT-Website-main/static/css/main.aefc273a.chunk.css.map",
-    "static/js/2.f2ead09c.chunk.js.LICENSE.txt": "/React-NFT-Website-main/static/js/2.f2ead09c.chunk.js.LICENSE.txt",
+    "static/css/2.373dc3f7.chunk.css.map": "/React-NFT-Website-main/static/css/2.373dc3f7.chunk.css.map",
+    "static/css/main.3d9c0588.chunk.css.map": "/React-NFT-Website-main/static/css/main.3d9c0588.chunk.css.map",
+    "static/js/2.0bfa747d.chunk.js.LICENSE.txt": "/React-NFT-Website-main/static/js/2.0bfa747d.chunk.js.LICENSE.txt",
     "static/media/ava-01.53d4b552.png": "/React-NFT-Website-main/static/media/ava-01.53d4b552.png",
     "static/media/ava-02.fe1546a1.png": "/React-NFT-Website-main/static/media/ava-02.fe1546a1.png",
     "static/media/ava-03.d5247c0b.png": "/React-NFT-Website-main/static/media/ava-03.d5247c0b.png",
@@ -32,10 +32,10 @@
     "static/media/remixicon.css": "/React-NFT-Website-main/static/media/remixicon.f2616f59.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.f007d48d.js",
-    "static/css/2.15bdb891.chunk.css",
-    "static/js/2.f2ead09c.chunk.js",
-    "static/css/main.aefc273a.chunk.css",
-    "static/js/main.8705d3e0.chunk.js"
+    "static/js/runtime-main.6ed0b93b.js",
+    "static/css/2.373dc3f7.chunk.css",
+    "static/js/2.0bfa747d.chunk.js",
+    "static/css/main.3d9c0588.chunk.css",
+    "static/js/main.0f592930.chunk.js"
   ]
 }
