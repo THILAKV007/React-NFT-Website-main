@@ -10,7 +10,7 @@ import { Button } from "react-bootstrap";
 import { initContract } from "../near/utils";
 
 const jwt =
-  "Bearer + 91722bdb234224ff0cf4";
+  "Bearer + eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJhZTlkNGYwMy00NmRlLTQ5ZDktYTJjOC0zNTZlMzljMTk0MzgiLCJlbWFpbCI6InRoaWxhay52MTRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyI6W3siaWQiOiJGUkExIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9LHsiaWQiOiJOWUMxIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9XSwidmVyc2lvbiI6MX0sIm1mYV9lbmFibGVkIjpmYWxzZSwic3RhdHVzIjoiQUNUSVZFIn0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BlZEtleSIsInNjb3BlZEtleUtleSI6IjU3N2UzMmU0NDVkYTI0OTFjNjFkIiwic2NvcGVkS2V5U2VjcmV0IjoiOTcwMjc3YTJkZThiZWM0NDAzMzRmNjA2YTZmOGFkOWU5NjMyMjdkM2QwYTMxOTNjZDBjMzA1M2ViNjE0YjBhMyIsImlhdCI6MTY3MjY2Mzk2NH0.jpfMzRB_0OFu091u6ihcKcvURr1uLn9Vj8DQjXzdsRg";
 
 const Create = (props) => {
   const { mainObject } = props;
@@ -87,10 +87,10 @@ const Create = (props) => {
     }
   }
 
-  // console.log(selectedFile);
+  console.log(selectedFile);
   function handleChange(e) {
     setselectedFile(e.target.files[0]);
-    // readURL(e, setSrc, setBuffer);
+    readURL(e, setSrc, setBuffer);
   }
 
   return (
@@ -101,7 +101,7 @@ const Create = (props) => {
           <Row>
             <Col lg="3" md="4" sm="6">
               <h5 className="mb-4 text-light">Preview Item</h5>
-              <PreviewMint item={{ title, desc, src, creator }} />
+              <PreviewMint item={{ selectedFile, title, desc, src, creator }} />
             </Col>
 
             <Col lg="9" md="8" sm="6">
