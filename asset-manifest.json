@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-NFT-Website-main/static/css/main.54326772.chunk.css",
-    "main.js": "/React-NFT-Website-main/static/js/main.b2938e09.chunk.js",
-    "main.js.map": "/React-NFT-Website-main/static/js/main.b2938e09.chunk.js.map",
+    "main.js": "/React-NFT-Website-main/static/js/main.5371cd79.chunk.js",
+    "main.js.map": "/React-NFT-Website-main/static/js/main.5371cd79.chunk.js.map",
     "runtime-main.js": "/React-NFT-Website-main/static/js/runtime-main.6ed0b93b.js",
     "runtime-main.js.map": "/React-NFT-Website-main/static/js/runtime-main.6ed0b93b.js.map",
     "static/css/2.373dc3f7.chunk.css": "/React-NFT-Website-main/static/css/2.373dc3f7.chunk.css",
@@ -36,6 +36,6 @@
     "static/css/2.373dc3f7.chunk.css",
     "static/js/2.e7de37f3.chunk.js",
     "static/css/main.54326772.chunk.css",
-    "static/js/main.b2938e09.chunk.js"
+    "static/js/main.5371cd79.chunk.js"
   ]
 }
