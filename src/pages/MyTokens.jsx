@@ -130,22 +130,37 @@ function Mytokens(props) {
           {nftMetadatas.length > 0 ? (
             nftMetadatas.map((nft, key) => {
               return (
-                <img
-                  style={{ width: "10vw" }}
-                  src={getImg(nft.metadata.media)}                  
-                  alt=""
-                  key={key}
-                />
+                <div
+                  style={{
+                    backgroundColor: "rgba(0, 0, 255, 0.219)",
+                    width: "15vw",
+                    margin: "1rem",
+                  }}
+                >
+                  <img
+                    style={{ width: "80%", margin: "0.5rem" }}
+                    src={getImg(nft.metadata.media)}
+                    alt=""
+                    key={key}
+                  />
+                  <h6 style={{ color: "white", wordWrap: "break-word" }}>
+                    #
+                    <span style={{ color: "GrayText", margin: "0.2rem" }}>
+                      {nft.token_id.toUpperCase()}
+                    </span>
+                  </h6>
+                </div>
               );
             })
           ) : (
-            <h3 style={{ color: "white" }}>No NFTs found</h3>
+            <h3 style={{ color: "white", textAlign: "center" }}>
+              No NFTs found
+            </h3>
           )}
         </div>
       </section>
     </>
   );
 }
-
 
 export default Mytokens;

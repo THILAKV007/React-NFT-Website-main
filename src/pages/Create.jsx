@@ -10,7 +10,7 @@ import { Button } from "react-bootstrap";
 import { initContract } from "../near/utils";
 
 const jwt =
-  "Bearer + eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiJhZTlkNGYwMy00NmRlLTQ5ZDktYTJjOC0zNTZlMzljMTk0MzgiLCJlbWFpbCI6InRoaWxhay52MTRAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyI6W3siaWQiOiJGUkExIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9LHsiaWQiOiJOWUMxIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9XSwidmVyc2lvbiI6MX0sIm1mYV9lbmFibGVkIjpmYWxzZSwic3RhdHVzIjoiQUNUSVZFIn0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BlZEtleSIsInNjb3BlZEtleUtleSI6IjU3N2UzMmU0NDVkYTI0OTFjNjFkIiwic2NvcGVkS2V5U2VjcmV0IjoiOTcwMjc3YTJkZThiZWM0NDAzMzRmNjA2YTZmOGFkOWU5NjMyMjdkM2QwYTMxOTNjZDBjMzA1M2ViNjE0YjBhMyIsImlhdCI6MTY3MjY2Mzk2NH0.jpfMzRB_0OFu091u6ihcKcvURr1uLn9Vj8DQjXzdsRg";
+  "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySW5mb3JtYXRpb24iOnsiaWQiOiI3OWUyYWJjOS02NmEyLTQ5MjYtYTIxMS04YjJmMDA3MzIyMTQiLCJlbWFpbCI6ImRpdnllc2hsYWx3YW5pMTNAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsInBpbl9wb2xpY3kiOnsicmVnaW9ucyI6W3siaWQiOiJGUkExIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9LHsiaWQiOiJOWUMxIiwiZGVzaXJlZFJlcGxpY2F0aW9uQ291bnQiOjF9XSwidmVyc2lvbiI6MX0sIm1mYV9lbmFibGVkIjpmYWxzZSwic3RhdHVzIjoiQUNUSVZFIn0sImF1dGhlbnRpY2F0aW9uVHlwZSI6InNjb3BlZEtleSIsInNjb3BlZEtleUtleSI6IjY0MWE5MGZlMjI2NWRiNzYwZDE3Iiwic2NvcGVkS2V5U2VjcmV0IjoiYzgyN2FhOTM4MmMwZTg3MTBiMjg1NTc0ZDg1Yjc5N2M0MDhmMjhjYTc4OGViNDE3MWQzNDg2Y2UzOTdkZmI2OSIsImlhdCI6MTY3MjQwNTg4OX0.Ly1YIV9PvIuiVFZqtHg27f3KbisVJ1FnLL7Ujfadof8";
 
 const Create = (props) => {
   const { mainObject } = props;
@@ -21,13 +21,13 @@ const Create = (props) => {
   const [src, setSrc] = useState(placeholder);
   const [buffer, setBuffer] = useState(0);
   const [selectedFile, setselectedFile] = useState();
-  const [tokenID, settokenID] = useState()
 
-  async function mintNFT() {
+  async function mintNFT(e) {
+    e.preventDefault();
     const formData = new FormData();
     formData.append("file", selectedFile);
     const metadata = JSON.stringify({
-      name: "File name",
+      name: "test",
     });
     formData.append("pinataMetadata", metadata);
     const options = JSON.stringify({
@@ -58,11 +58,15 @@ const Create = (props) => {
   }
 
   async function mint(ipfsHash) {
+    const id = Math.round(new Date().getTime() / 1000)
+      .toString()
+      .slice(2);
     const helpers = await initContract();
+    console.log(id);
     try {
       const res = await helpers.nft_contract.nft_mint(
         {
-          token_id: tokenID,
+          token_id: id,
           metadata: {
             title: title,
             description: desc,
@@ -87,7 +91,6 @@ const Create = (props) => {
     }
   }
 
-  console.log(selectedFile);
   function handleChange(e) {
     setselectedFile(e.target.files[0]);
     readURL(e, setSrc, setBuffer);
@@ -101,7 +104,7 @@ const Create = (props) => {
           <Row>
             <Col lg="3" md="4" sm="6">
               <h5 className="mb-4 text-light">Preview Item</h5>
-              <PreviewMint item={{ selectedFile, title, desc, src, creator }} />
+              <PreviewMint item={{ title, desc, src, creator }} />
             </Col>
 
             <Col lg="9" md="8" sm="6">
@@ -115,16 +118,6 @@ const Create = (props) => {
                       onChange={(e) => handleChange(e)}
                       required
                     />
-
-                    <div className="form__input">
-                      <label htmlFor="">Token ID</label>
-                      <input
-                        type="text"
-                        placeholder="Enter desired token ID"
-                        onChange={(e) => settokenID(e.target.value)}
-                        required
-                      />
-                    </div>
 
                     <div className="form__input">
                       <label htmlFor="">Title</label>
@@ -149,7 +142,9 @@ const Create = (props) => {
                     </div>
                   </div>
                   {/* <Button onClick={uploadIPFS}>Upload to IPFS</Button> */}
-                  <Button type="submit" onClick={mintNFT}>Mint</Button>
+                  <Button type="submit" onClick={(e) => mintNFT(e)}>
+                    Mint
+                  </Button>
                 </form>
               </div>
             </Col>
